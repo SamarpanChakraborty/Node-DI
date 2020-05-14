@@ -1,0 +1,43 @@
+{
+  "name": "api-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --timeout 10000 src/**/*.js --exit",
+    "dev": "nodemon",
+    "start": "nodemon --inspect app.js",
+    "lint": "eslint src/**/*.js --fix"
+  },
+  "author": "Samarpan Chakraborty",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "oauth2-server": "^3.0.1",
+    "pg": "^8.0.2",
+    "randomstring": "^1.1.5",
+    "sequelize": "^5.21.6",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.1.0",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.1"
+  },
+  "husky": {}
+}
